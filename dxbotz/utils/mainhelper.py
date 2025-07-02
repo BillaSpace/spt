@@ -1,3 +1,4 @@
+
 import os
 from random import randint 
 from yt_dlp import YoutubeDL
@@ -127,7 +128,7 @@ def fetch_spotify_track(client, item_id):
 @sync_to_async
 def download_songs(item, download_directory='.'):
     file = f"{download_directory}/{item['name']} - {item['artists'][0]['name']}"
-    query = f"{item['name']} {item['artists'][0]['name']}".replace(":", "").replace("\"", "")
+    query = f"{item['name']} {item['artists'][0]['name']} audio".replace(":", "").replace("\"", "")
     ydl_opts = {
         'format': "bestaudio/best",
         'default_search': 'ytsearch',
@@ -153,20 +154,40 @@ def download_songs(item, download_directory='.'):
         try:
             info = ydl.extract_info(f"ytsearch:{query}", download=True)
             filename = ydl.prepare_filename(info)
-            return f"{filename}"
+            if not filename.endswith('.mp3'):
+                filename = f"{os.path.splitext(filename)[0]}.mp3"
+            if not os.path.isfile(filename):
+                raise FileNotFoundError(f"File {filename} was not created")
+            return filename
         except IndexError:
-            query = f"{item['name']} lyrics"
-            info = ydl.extract_info(f"ytsearch:{query}", download=True)
-            filename = ydl.prepare_filename(info)
-            return f"{filename}"
+            # Retry with lyrics query
+            query = f"{item['name']} lyrics audio".replace(":", "").replace("\"", "")
+            try:
+                info = ydl.extract_info(f"ytsearch:{query}", download=True)
+                filename = ydl.prepare_filename(info)
+                if not filename.endswith('.mp3'):
+                    filename = f"{os.path.splitext(filename)[0]}.mp3"
+                if not os.path.isfile(filename):
+                    raise FileNotFoundError(f"File {filename} was not created")
+                return filename
+            except IndexError:
+                # Fallback to broader search
+                query = f"{item['name']} {item['artists'][0]['name']}".replace(":", "").replace("\"", "")
+                info = ydl.extract_info(f"ytsearch:{query}", download=True)
+                filename = ydl.prepare_filename(info)
+                if not filename.endswith('.mp3'):
+                    filename = f"{os.path.splitext(filename)[0]}.mp3"
+                if not os.path.isfile(filename):
+                    raise FileNotFoundError(f"File {filename} was not created")
+                return filename
         except Exception as e:
             LOGGER.error(f"Download failed for {query}: {e}")
-            raise e
+            raise FileNotFoundError(f"Download failed for {query}: {e}")
 
 @sync_to_async
 def download_dez(song, download_directory='.'):
     file = f"{download_directory}/{song['name']} - {song['artist']}"
-    query = f"{song.get('name')} {song.get('artist')}".replace(":", "").replace("\"", "")
+    query = f"{song.get('name')} {song.get('artist')} audio".replace(":", "").replace("\"", "")
     ydl_opts = {
         'format': "bestaudio/best",
         'default_search': 'ytsearch',
@@ -192,15 +213,33 @@ def download_dez(song, download_directory='.'):
         try:
             info = ydl.extract_info(f"ytsearch:{query}", download=True)
             filename = ydl.prepare_filename(info)
-            return f"{filename}"
+            if not filename.endswith('.mp3'):
+                filename = f"{os.path.splitext(filename)[0]}.mp3"
+            if not os.path.isfile(filename):
+                raise FileNotFoundError(f"File {filename} was not created")
+            return filename
         except IndexError:
-            query = f"{song['name']} lyrics"
-            info = ydl.extract_info(f"ytsearch:{query}", download=True)
-            filename = ydl.prepare_filename(info)
-            return f"{filename}"
+            query = f"{song['name']} lyrics audio".replace(":", "").replace("\"", "")
+            try:
+                info = ydl.extract_info(f"ytsearch:{query}", download=True)
+                filename = ydl.prepare_filename(info)
+                if not filename.endswith('.mp3'):
+                    filename = f"{os.path.splitext(filename)[0]}.mp3"
+                if not os.path.isfile(filename):
+                    raise FileNotFoundError(f"File {filename} was not created")
+                return filename
+            except IndexError:
+                query = f"{song['name']} {song['artist']}".replace(":", "").replace("\"", "")
+                info = ydl.extract_info(f"ytsearch:{query}", download=True)
+                filename = ydl.prepare_filename(info)
+                if not filename.endswith('.mp3'):
+                    filename = f"{os.path.splitext(filename)[0]}.mp3"
+                if not os.path.isfile(filename):
+                    raise FileNotFoundError(f"File {filename} was not created")
+                return filename
         except Exception as e:
             LOGGER.error(f"Download failed for {query}: {e}")
-            raise e
+            raise FileNotFoundError(f"Download failed for {query}: {e}")
 
 @sync_to_async
 def copy(P, A):
