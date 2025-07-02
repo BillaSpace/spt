@@ -7,11 +7,11 @@ class dx(object):
     ABOUT_TXT = """
 <blockquote>
 🤖 <b>Mʏ ɪᴅᴇɴᴛɪᴛʏ</b> : sᴘᴀᴄᴇ-x ᴍᴜʟᴛɪ-ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙᴏᴛ
-👑 <b>ᴏᴡɴᴇʀ</b> : <a href="https://t.me/x_ifeelram">Sᴛᴇʟʟᴀʀ</a>  
-👨‍💻 <b>ʟᴇᴀᴅɪɴɢ ᴅᴇᴠ</b> : <a href="https://t.me/anuj_sing">ᴀɴᴜᴊ</a>  
-📕 <b>Cᴏʀᴇ ʟɪʙ</b> : <a href="https://github.com/pyrogram">PYROGRAM</a>  
-✏️ <b>Lᴀɴɢᴜᴀɢᴇ</b> : <a href="https://www.python.org">PYTHON 3</a>  
-💾 <b>ᴅᴀᴛᴀʙᴀsᴇ</b> : <a href="https://cloud.mongodb.com">MONGODB</a>  
+👑 <b>ᴏᴡɴᴇʀ</b> : <a href="https://t.me/x_ifeelram">ᴘʀᴀᴋʜᴀʀ</a>  
+👨‍💻 <b>ʟᴇᴀᴅɪɴɢ ᴅᴇᴠ</b> : <a href="https://t.me/Anuj_singg">ᴀɴᴜᴊ</a>  
+📕 <b>Cᴏʀᴇ ʟɪʙ</b> : <a href="https://github.com/pyrogram">ᴘʏʀᴏɢʀᴀᴍ</a>  
+✏️ <b>Lᴀɴɢᴜᴀɢᴇ</b> : <a href="https://www.python.org">ᴘʏᴛʜᴏɴ 3.10</a>  
+💾 <b>ᴅᴀᴛᴀʙᴀsᴇ</b> : <a href="https://cloud.mongodb.com">ᴍᴏɴɢᴏ ᴅʙ</a>  
 📊 <b>Bᴜɪʟᴅ sᴛᴀᴛᴜs</b> : v1.0 ʙᴇᴛᴀ  
 </blockquote>
 """
@@ -33,6 +33,6 @@ class dx(object):
 <b><u>Sᴘᴇᴄɪᴀʟ ᴛʜᴀɴᴋs ᴛᴏ ᴀʟʟ ᴅᴇᴠᴇʟᴏᴘᴇʀs</u></b>  
 <blockquote>
 » <b>sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ</b> : <a href="https://github.com/DX-MODS/SpotifyDL">sᴘᴏᴛɪᴘʏ ᴅʟ</a>  
-» <bᴘᴏᴡᴇʀᴇᴅ ʙʏ sᴘᴀᴄᴇ-x ᴀᴘɪ</b> : <a href="https://youtube.com/@DX-MODS">ɪɢɴɪᴛᴇ</a>  
+» <bᴘᴏᴡᴇʀᴇᴅ ʙʏ sᴘᴀᴄᴇ-x ᴀᴘɪ</b> : <a href="https://billaspace.com">sᴏᴏɴ</a>  
 </blockquote>
 """
