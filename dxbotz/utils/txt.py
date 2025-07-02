@@ -7,13 +7,13 @@
 class dx(object):
     ABOUT_TXT = """
 ╭───────────⍟
-├🤖 𝙼𝚈 𝙽𝙰𝙼𝙴 : 𝚂𝙿𝙾𝚃𝙸𝙵𝚈 𝙳𝙻
-├👑 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁𝚂 : <a href=https://t.me/dxziyan>𝚉𝙸𝚈𝙰𝙽</a> 
-├👨‍💻 𝙿𝚁𝙾𝙶𝚁𝙰𝙼𝙴𝚁 : <a href=https://github.com/DX-MODS>𝙳𝚇-𝙼𝙾𝙳𝚂</a>
+├🤖 𝙼𝚈 𝙽𝙰𝙼𝙴 : Ax𝚂𝙿𝙾𝚃𝙸𝙵𝚈 𝙳𝙻
+├👑 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁𝚂 : <a href=https://t.me/x_ifeelram>Sᴛᴇʟʟᴀʀ</a> 
+├👨‍💻 𝙿𝚁𝙾𝙶𝚁𝙰𝙼𝙴𝚁 : <a href=https://t.me/anuj_sing>ᴀɴᴜᴊ</a>
 ├📕 𝙻𝙸𝙱𝚁𝙰𝚁𝚈 : <a href=https://github.com/pyrogram>𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼</a>
 ├✏️ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 : <a href=https://www.python.org>𝙿𝚈𝚃𝙷𝙾𝙽 3</a>
 ├💾 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴 : <a href=https://cloud.mongodb.com>𝙼𝙾𝙽𝙶𝙾𝙳𝙱</a>
-├📊 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚄𝚂 : v1.0             
+├📊 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚄𝚂 : v1.0 ʙᴇᴛᴀ           
 ╰───────────────⍟
                                 """
     HELP_TXT = """
@@ -24,7 +24,7 @@ class dx(object):
 •> /lyrics and song name to download lyrics of any song.
 •> /ping to check ping of the bot.
 •> /
-ℹ️ 𝗔𝗻𝘆 𝗢𝘁𝗵𝗲𝗿 𝗛𝗲𝗹𝗽 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :- <a href=https://t.me/DXMODS_Support>𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙶𝚁𝙾𝚄𝙿</a>
+ℹ️ 𝗔𝗻𝘆 𝗢𝘁𝗵𝗲𝗿 𝗛𝗲𝗹𝗽 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :- <a href=https://t.me/BillaCore>𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙶𝚁𝙾𝚄𝙿</a>
 """
 
 #⚠️ don't remove our credits 🙏😢😢
