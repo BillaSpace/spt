@@ -1,7 +1,7 @@
 from pyrogram.errors import FloodWait, Forbidden, UserIsBlocked, MessageNotModified, ChatWriteForbidden, SlowmodeWait 
 from asyncio import sleep
 import time
-from config import AUTH_CHATS, LOGGER, LOG_GROUP, BUG, ADMINS
+from config import AUTH_CHATS, LOGGER, LOG_GROUP, BUG
 from dxbotz import Dxbotz
 from pyrogram import filters, enums
 from dxbotz.utils.mainhelper import parse_spotify_url, fetch_spotify_track, download_songs, thumb_down, copy, forward 
@@ -21,6 +21,7 @@ from pyrogram.errors import ChatAdminRequired
 from requests import head
 from requests.exceptions import MissingSchema
 
+ADMINS = 5960968099
 client = Spotify(auth_manager=SpotifyClientCredentials())
 PICS = ("dxbotz/1162775.jpg dxbotz/danny-howe-bn-D2bCvpik-unsplash.jpg dxbotz/saurabh-gill-38RthwbB3nE-unsplash.jpg").split()
 MAIN = bool(environ.get('MAIN', None))
