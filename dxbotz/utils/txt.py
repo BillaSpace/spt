@@ -1,35 +1,38 @@
 # Copyright (C) 2024 DX-MODS
-#Licensed under the  AGPL-3.0 License;
-#you may not use this file except in compliance with the License.
-#Author ZIYAN
-#if you use our codes try to donate here https://www.buymeacoffee.com/ziyankp
+# Licensed under the AGPL-3.0 License;
+# Author ZIYAN
+# if you use our codes try to donate here https://www.buymeacoffee.com/ziyankp
 
 class dx(object):
     ABOUT_TXT = """
-╭───────────⍟
-├🤖 𝙼𝚈 𝙽𝙰𝙼𝙴 : Ax𝚂𝙿𝙾𝚃𝙸𝙵𝚈 𝙳𝙻
-├👑 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁𝚂 : <a href=https://t.me/x_ifeelram>Sᴛᴇʟʟᴀʀ</a> 
-├👨‍💻 𝙿𝚁𝙾𝙶𝚁𝙰𝙼𝙴𝚁 : <a href=https://t.me/anuj_sing>ᴀɴᴜᴊ</a>
-├📕 𝙻𝙸𝙱𝚁𝙰𝚁𝚈 : <a href=https://github.com/pyrogram>𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼</a>
-├✏️ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 : <a href=https://www.python.org>𝙿𝚈𝚃𝙷𝙾𝙽 3</a>
-├💾 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴 : <a href=https://cloud.mongodb.com>𝙼𝙾𝙽𝙶𝙾𝙳𝙱</a>
-├📊 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚄𝚂 : v1.0 ʙᴇᴛᴀ           
-╰───────────────⍟
-                                """
-    HELP_TXT = """
-🌌 <b><u>HOW TO USE OUR BOT</u></b>
-  
-•> /start to start our bot follow the instructions after.
-•> /to download songs you can send Spotify url here playlist or song url supported flac .
-•> /lyrics and song name to download lyrics of any song.
-•> /ping to check ping of the bot.
-•> /
-ℹ️ 𝗔𝗻𝘆 𝗢𝘁𝗵𝗲𝗿 𝗛𝗲𝗹𝗽 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :- <a href=https://t.me/BillaCore>𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙶𝚁𝙾𝚄𝙿</a>
+<blockquote>
+🤖 <b>Mʏ ɪᴅᴇɴᴛɪᴛʏ</b> : sᴘᴀᴄᴇ-x ᴍᴜʟᴛɪ-ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙᴏᴛ
+👑 <b>ᴏᴡɴᴇʀ</b> : <a href="https://t.me/x_ifeelram">Sᴛᴇʟʟᴀʀ</a>  
+👨‍💻 <b>ʟᴇᴀᴅɪɴɢ ᴅᴇᴠ</b> : <a href="https://t.me/anuj_sing">ᴀɴᴜᴊ</a>  
+📕 <b>Cᴏʀᴇ ʟɪʙ</b> : <a href="https://github.com/pyrogram">PYROGRAM</a>  
+✏️ <b>Lᴀɴɢᴜᴀɢᴇ</b> : <a href="https://www.python.org">PYTHON 3</a>  
+💾 <b>ᴅᴀᴛᴀʙᴀsᴇ</b> : <a href="https://cloud.mongodb.com">MONGODB</a>  
+📊 <b>Bᴜɪʟᴅ sᴛᴀᴛᴜs</b> : v1.0 ʙᴇᴛᴀ  
+</blockquote>
 """
 
-#⚠️ don't remove our credits 🙏😢😢
+    HELP_TXT = """
+🌌 <b><u>Hᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ</u></b>
+
+<blockquote>
+• /start ᴛᴏ sᴛᴀʀᴛ ᴍᴇ & ғᴏʟʟᴏᴡ ᴛʜᴇ ɪɴsᴛʀᴜᴄᴛɪᴏɴs.  
+• ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ sᴏɴɢs sᴇɴᴅ Sᴘᴏᴛɪғʏ Uʀʟ ʜᴇʀᴇ — playlist or song URL supported, including FLAC.  
+• Usᴇ /lyrics [sᴏɴɢ ɴᴀᴍᴇ] ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ʟʏʀɪᴄs ᴏғ ᴀɴʏ sᴏɴɢ.  
+• /ping ᴛᴏ ᴄʜᴇᴄᴋ ᴍʏ ᴄᴏʀᴇs sᴘᴇᴇᴅ & ғᴜɴᴄᴛɪᴏɴs ɪɴ ᴍs.  
+</blockquote>
+
+ℹ️ ғᴏʀ ᴀɴʏ ᴏᴛʜᴇʀ ʜᴇʟᴘ, ᴄᴏɴᴛᴀᴄᴛ: <a href="https://t.me/BillaCore">Sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ</a>
+"""
+
     DEV_TXT = """
-<b><u>𝚂𝚙𝚎𝚌𝚒𝚊𝚕 𝚝𝚑𝚊𝚗𝚔𝚜 𝚝𝚘 𝚊𝚕𝚕 𝚍𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜</b></u> 
-» 𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗢𝗗𝗘 : <a href=https://github.com/DX-MODS/SpotifyDL>𝚂𝙿𝙾𝚃𝙸𝙵𝚈 𝙳𝙻</a>
-» 𝗛𝗢𝗪 𝗧𝗢 𝗗𝗘𝗣𝗟𝗢𝗬 : <a href=https://youtube.com/@DX-MODS</a>
+<b><u>Sᴘᴇᴄɪᴀʟ ᴛʜᴀɴᴋs ᴛᴏ ᴀʟʟ ᴅᴇᴠᴇʟᴏᴘᴇʀs</u></b>  
+<blockquote>
+» <b>sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ</b> : <a href="https://github.com/DX-MODS/SpotifyDL">sᴘᴏᴛɪᴘʏ ᴅʟ</a>  
+» <bᴘᴏᴡᴇʀᴇᴅ ʙʏ sᴘᴀᴄᴇ-x ᴀᴘɪ</b> : <a href="https://youtube.com/@DX-MODS">ɪɢɴɪᴛᴇ</a>  
+</blockquote>
 """
