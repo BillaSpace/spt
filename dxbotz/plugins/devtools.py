@@ -41,7 +41,7 @@ def sh(_, m: Message):
         h = m.reply(x)
         m.reply(e)
 
-@Dxbotz.on_message(filters.user(ADMIN) & filters.command("eva"))
+@Dxbotz.on_message(filters.user(ADMIN) & filters.command("eval"))
 async def eval(client, message):
     status_message = await message.reply_text("Processing ...")
     cmd = message.text.split(" ", maxsplit=1)[1]
