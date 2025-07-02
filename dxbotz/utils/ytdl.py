@@ -42,7 +42,7 @@ def audio_opt(path, uploader="@BillaDLbot"):
         "format": "bestaudio/best",
         "addmetadata": True,
         "noplaylist": True,
-        "outtmpl": f"{path}/%(title)s - {uploader}.%(ext)s",
+        "outtmpl": f"{path}/%(title)s.%(ext)s",  # Simplified to avoid uploader in filename
         "postprocessors": [{
             "key": "FFmpegExtractAudio",
             "preferredcodec": "mp3",
@@ -55,14 +55,19 @@ def audio_opt(path, uploader="@BillaDLbot"):
 
 @sync_to_async
 def ytdl_down(opts, url):
-    cookie_opts = get_common_opts()
-    opts.update(cookie_opts)
-    with YoutubeDL(opts) as ydl:
+    ydl_opts = get_common_opts()
+    ydl_opts.update(opts)  # Merge provided opts with common opts
+    with YoutubeDL(ydl_opts) as ydl:
         try:
             info = ydl.extract_info(url, download=True)
-            return ydl.prepare_filename(info)
+            filename = ydl.prepare_filename(info)
+            if not filename.endswith('.mp3'):
+                filename = f"{os.path.splitext(filename)[0]}.mp3"
+            if not os.path.isfile(filename):
+                raise FileNotFoundError(f"File {filename} was not created")
+            return filename
         except Exception as e:
-            raise e
+            raise FileNotFoundError(f"Download failed for {url}: {e}")
 
 @sync_to_async
 def thumb_down(url, videoId):
