@@ -41,7 +41,7 @@ async def link_handler(Dxbotz, message):
           else: 
              if get_api.get('result').get('sd'):
                try:
-                   dump_file = await message.reply_video(get_api['result']['sd'],caption="Thank you for using - @SpotifyDownlodbot")
+                   dump_file = await message.reply_video(get_api['result']['sd'],caption="Thank you for using - @BillaDLbot")
                except KeyError:
                    pass
                except Exception:
