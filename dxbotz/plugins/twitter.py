@@ -39,13 +39,13 @@ async def twitter_handler(Dxbotz, message):
                   meta_tag = soup.find("meta", attrs={"property": "og:image"})
               content_value  = meta_tag['content']
               try:
-                  dump_file = await message.reply_video(content_value,caption="Thank you for using - @SpotifyDownlodbot")
+                  dump_file = await message.reply_video(content_value,caption="Thank you for using - @BillaDLbot")
               except Exception as e:
                   print(e)
                   try:
                      snd_msg=await message.reply(content_value)
                      await asyncio.sleep(1)
-                     await message.reply_video(content_value,caption="Thank you for using - @SpotifyDownlodbot")
+                     await message.reply_video(content_value,caption="Thank you for using - @BillaDLbot")
                      await snd_msg.delete()
                   except Exception as e:
                       print(e)
@@ -60,6 +60,6 @@ async def twitter_handler(Dxbotz, message):
           if "dump_file" in locals():
              await dump_file.copy(DUMP_GROUP)
        await m.delete()
-       await message.reply("Check out @dxmods_updates(updates)  @ziyan_dx(owner)")               
+       await message.reply("Check out @BillaSpace(updates)  @x_ifeelram(Owner)")               
                   
       
