@@ -22,8 +22,8 @@ async def start(client, message):
     button=InlineKeyboardMarkup([[
         InlineKeyboardButton("👼 𝙳𝙴𝚅𝚂 👼", callback_data='dev')
         ],[
-        InlineKeyboardButton('📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/dxmods_updates'),
-        InlineKeyboardButton('🍂 𝚂𝚄𝙿𝙿𝙾𝚁𝚃', url='https://t.me/Dx_Mods_Discussion')
+        InlineKeyboardButton('📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/BillaSpace'),
+        InlineKeyboardButton('🍂 𝚂𝚄𝙿𝙿𝙾𝚁𝚃', url='https://t.me/BillaCore')
         ],[
         InlineKeyboardButton('🍃 𝙰𝙱𝙾𝚄𝚃', callback_data='about'),
         InlineKeyboardButton('ℹ️ 𝙷𝙴𝙻𝙿', callback_data='help')
@@ -38,12 +38,12 @@ async def cb_handler(client, query: CallbackQuery):
     data = query.data 
     if data == "start":
         await query.message.edit_text(
-            text=f"""👋 Hai {query.from_user.mention} \n𝙸'𝚖 𝙰 𝚊𝚍𝚟𝚊𝚗𝚌𝚎𝚍 𝚖𝚞𝚜𝚒𝚌 𝚍𝚘𝚠𝚗𝚕𝚘𝚊𝚍𝚎𝚛 𝚜𝚞𝚙𝚙𝚘𝚛𝚝𝚜 𝚂𝚙𝚘𝚝𝚒𝚏𝚢 𝚍𝚎𝚎𝚣𝚎𝚛 𝚢𝚘𝚞𝚝𝚞𝚋𝚎 𝚜𝚊𝚊𝚟𝚗! """,
+            text=f"""👋 Heyo {query.from_user.mention} \nI'm An Super Advanced Music Downloader That Supports Spotify Deezer Youtube JioSaavn Soundcloud & Social Platforms Like Insta FaceBook TikTok Etc! Join My Updates @BillaSpace For More SuperBots Like Me """,
             reply_markup=InlineKeyboardMarkup( [[
-                InlineKeyboardButton("👼 𝙳𝙴𝚅𝚂 👼", callback_data='dev')                
+                InlineKeyboardButton("👼 𝙳𝙴𝚅𝚂", callback_data='dev')                
                 ],[
-                InlineKeyboardButton('📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/dxmods_updates'),
-                InlineKeyboardButton('🍂 𝚂𝚄𝙿𝙿𝙾𝚁𝚃', url='https://t.me/Dx_Mods_Discussion')
+                InlineKeyboardButton('📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/BillaSpace'),
+                InlineKeyboardButton('🍂 𝚂𝚄𝙿𝙿𝙾𝚁𝚃', url='https://t.me/BillaCore')
                 ],[
                 InlineKeyboardButton('🍃 𝙰𝙱𝙾𝚄𝚃', callback_data='about'),
                 InlineKeyboardButton('ℹ️ 𝙷𝙴𝙻𝙿', callback_data='help')
@@ -55,9 +55,9 @@ async def cb_handler(client, query: CallbackQuery):
             text=dx.HELP_TXT,
             reply_markup=InlineKeyboardMarkup( [[
                #⚠️ don't change source code & source link ⚠️ #
-               InlineKeyboardButton("❣️ 𝚂𝙾𝚄𝚁𝙲𝙴", url="https://github.com/DX-MODS/SpotifyDL")
+               InlineKeyboardButton("❣️ 𝚂𝙾𝚄𝚁𝙲𝙴", url="https://github.com/Billa/spotidl")
                ],[
-               InlineKeyboardButton("❤️‍🔥 𝙷𝙾𝚆 𝚃𝙾 𝚄𝚂𝙴  ❤️‍🔥", url='https://youtube.com/@DX-MODS')
+               InlineKeyboardButton("❤ ᴄʜᴀᴛ ɢʀᴏᴜᴘ", url='https://t.me/chatspace_2)
                ],[
                InlineKeyboardButton("🔒 𝙲𝙻𝙾𝚂𝙴", callback_data = "close"),
                InlineKeyboardButton("◀️ 𝙱𝙰𝙲𝙺", callback_data = "start")
@@ -69,9 +69,9 @@ async def cb_handler(client, query: CallbackQuery):
             text=dx.ABOUT_TXT,            
             reply_markup=InlineKeyboardMarkup( [[
                #⚠️ don't change source code & source link ⚠️ #
-               InlineKeyboardButton("❣️ 𝚂𝙾𝚄𝚁𝙲𝙴", url="https://github.com/DX-MODS/SpotifyDL")
+               InlineKeyboardButton("❣️ 𝚂𝙾𝚄𝚁𝙲𝙴", url="https://github.com/Billa/spotidl")
                ],[
-               InlineKeyboardButton("🖥️ 𝙷𝙾𝚆 𝚃𝙾 𝙼𝙰𝙺𝙴", url="https://youtube.com/@DX-MODS")
+               InlineKeyboardButton("ᴄʜᴀᴛ ɢʀᴏᴜᴘ", url="https://t.me/chatspace_2")
                ],[
                InlineKeyboardButton("🔒 𝙲𝙻𝙾𝚂𝙴", callback_data = "close"),
                InlineKeyboardButton("◀️ 𝙱𝙰𝙲𝙺", callback_data = "start")
@@ -85,7 +85,7 @@ async def cb_handler(client, query: CallbackQuery):
                #⚠️ don't change source code & source link ⚠️ #
                InlineKeyboardButton("❣️ 𝚂𝙾𝚄𝚁𝙲𝙴", url="https://github.com/DX-MODS/SpotifyDL")
                ],[
-               InlineKeyboardButton("🖥️ 𝙷𝙾𝚆 𝚃𝙾 𝙼𝙰𝙺𝙴", url="https://youtube.com/@DX-MODS")
+               InlineKeyboardButton("🖥️ᴄʜᴀᴛ ɢʀᴏᴜᴘ", url="https://t.me/chatspace_2")
                ],[
                InlineKeyboardButton("🔒 𝙲𝙻𝙾𝚂𝙴", callback_data = "close"),
                InlineKeyboardButton("◀️ 𝙱𝙰𝙲𝙺", callback_data = "start")
