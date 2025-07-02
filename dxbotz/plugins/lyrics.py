@@ -30,7 +30,7 @@ async def sng(bot, message):
           except Exception as e:                            
              await message.reply_text(f"lyrics does not found for `{song}` ", quote = True, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url = f"https://t.me/dxmodsupdates")]]))
           finally:
-            await message.reply("Check out @DxSpotifyDl(music)  @dxziyan(owner)")
+            await message.reply("Check out @Billamusic_bot(music)  @x_ifeelram(owner)")
 
 
 
