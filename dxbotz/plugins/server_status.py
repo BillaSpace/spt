@@ -10,7 +10,7 @@ import shutil, psutil
 from dxbotz import Dxbotz
 from dxbotz.utils.readabletime import *
 from dxbotz.utils.start_time import StartTime 
-@Dxbotz.on_message(filters.private & filters.regex("status"))
+@Dxbotz.on_message(filters.private & filters.regex("health"))
 async def stats(bot, update):
   currentTime = readable_time((time.time() - StartTime))
   total, used, free = shutil.disk_usage('.')
