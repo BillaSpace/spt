@@ -24,3 +24,4 @@ wget
 ffmpeg
 dnspython
 tswift
+pytz
