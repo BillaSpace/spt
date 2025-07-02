@@ -127,7 +127,7 @@ async def search(Dxbotz: Dxbotz, query: CallbackQuery):
                 audio["TITLE"] = f" {song.get('name')}"
                 audio["ORIGINALYEAR"] = song.get('year')
                 audio["YEAR_OF_RELEASE"] = song.get('year')
-                audio["WEBSITE"] = "https://t.me/spotify_downloa_bot"
+                audio["SOURCE"] = "https://t.me/BillaDLbot"
                 audio["GEEK_SCORE"] = "9"
                 audio["ARTIST"] = song.get('artist')                                                                            
                 audio["ALBUM"] = song.get('album')
