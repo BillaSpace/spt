@@ -106,7 +106,7 @@ async def shazam_(client, message):
 <b>Size :</b> <code>{size_}</code>
 <b>Time Taken :</b> <code>{t_k} Seconds</code>
 
-<b><u>𝙶𝚎𝚗𝚎𝚛𝚊𝚝𝚎𝚍 𝙱𝚢 @SpotifyDownlodbot</b></u>
+<b><u>𝙶𝚎𝚗𝚎𝚛𝚊𝚝𝚎𝚍 𝙱𝚢 @BillaDLbot</b></u>
     """
     if thumb:
         await msg.delete()
