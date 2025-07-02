@@ -5,14 +5,19 @@
 # Creates a .env file with all variable names empty
 # -----------------------------
 
-# Set output file
 ENV_FILE=".env"
 
-# Remove old file if exists
-rm -f "$ENV_FILE"
+# Warn if .env already exists
+if [ -f "$ENV_FILE" ]; then
+  echo "⚠️  $ENV_FILE already exists. Overwriting..."
+  sleep 1
+  rm -f "$ENV_FILE"
+fi
 
-# Create .env with empty variables
+# Create new .env with all variables
 cat <<EOF > "$ENV_FILE"
+# Auto-generated .env file for DX-SPT
+
 API_ID=
 API_HASH=
 BOT_TOKEN=
@@ -30,5 +35,9 @@ GENIUS_API=
 MAINTENANCE=
 EOF
 
-# Confirm
-echo ".env file created with empty values. Please edit it to add your credentials."
+# Make sure it's readable/writable
+chmod 600 "$ENV_FILE"
+
+# Done
+echo "✅ .env file created successfully with empty values."
+echo "➡️  Edit the file to add your values: vi .env"
